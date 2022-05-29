@@ -1,8 +1,10 @@
 function App() {
   return (
-    <div>
-      <h1>Hi There</h1>
-    </div>
+    <>
+      <main className="container xl:container lg:container md:container sm:container mx-auto">
+        <h2>Tailwind CSS Install</h2>
+      </main>
+    </>
   );
 }
 
