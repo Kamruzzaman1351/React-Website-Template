@@ -6,6 +6,7 @@ import FAQPage from "./pages/FAQPage";
 import LoginPage from "./pages/LoginPage";
 import ContactPage from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import Footer from "./components/layouts/Footer";
 function App() {
   return (
     <BrowserRouter>
@@ -20,6 +21,7 @@ function App() {
           <Route path="/*" element={<NotFound />} />
         </Routes>
       </main>
+      <Footer />
     </BrowserRouter>
   );
 }

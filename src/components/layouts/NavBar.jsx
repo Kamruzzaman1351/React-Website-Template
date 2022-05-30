@@ -3,16 +3,16 @@ import logo from "../assets/images/logo-bookmark.svg"
 
 function NavBar() {
   return (
-    <nav class="container relative mx-auto p-6">
+    <nav className="container relative mx-auto p-6">
       {/* Flex Container For Nav Items */}
-      <div class="flex items-center justify-between space-x-20 my-6">
+      <div className="flex items-center justify-between space-x-20 my-6">
         {/* Logo */}
-        <Link to="/" class="z-30">
+        <Link to="/" className="z-30">
           <img src={logo} alt="" id="logo" />
         </Link>
 
         {/* Menu Items */}
-        <div class="hidden items-center space-x-10 uppercase text-grayishBlue md:flex">
+        <div className="hidden items-center space-x-10 uppercase text-grayishBlue md:flex">
           <Link to="/" className='tracking-widest hover:text-softRed'>Home</Link>
           <Link to="/about" className='tracking-widest hover:text-softRed'>About</Link>
           <Link to="/faq" className='tracking-widest hover:text-softRed'>FAQ</Link>
