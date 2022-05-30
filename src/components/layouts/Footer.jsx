@@ -13,10 +13,10 @@ function Footer() {
             </div>
             <div className='flex space-x-10'>
                 <a href="https://github.com/Kamruzzaman1351/" target="_blank" rel='noreferrer'>
-                    <FaGithub className='inline pr-2 text-3xl text-grayishBlue' />
+                    <FaGithub className='inline pr-2 text-3xl text-grayishBlue hover:text-white' />
                 </a>
                 <a href="https://github.com/Kamruzzaman1351/" target="_blank" rel='noreferrer'>
-                    <FaTwitter className='inline pr-2 text-3xl text-grayishBlue'/>
+                    <FaTwitter className='inline pr-2 text-3xl text-grayishBlue hover:text-white'/>
                 </a>
             </div>
         </div>
