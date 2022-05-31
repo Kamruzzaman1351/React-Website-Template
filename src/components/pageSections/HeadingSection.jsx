@@ -1,14 +1,21 @@
-function HeadingSection() {
+import PropsType from "prop-types"
+function HeadingSection({title, text}) {
   return (
-    <div className="container mx-auto mt-16 px-6">
-        <h2 className="mb-6 text-4xl font-semibold text-center">Features</h2>
+    <div className="container mx-auto mt-16 px-6 pb-6 mb-8">
+        <h2 className="mb-6 text-4xl font-semibold text-center">{title}</h2>
         <p className="max-w-md mx-auto text-center text-grayishBlue">
-            Our aim is to make it quick and easy for you to access your favourite
-            websites. Your bookmarks sync between your devices so you can access
-            them on the go.
+            {text}
         </p>
     </div>
   )
+}
+HeadingSection.defaultProps = {
+    title: "Title Goes Here",
+    text: "Paragraph text goes here"
+}
+HeadingSection.propsTypes = {
+    title: PropsType.string,
+    text: PropsType.string,
 }
 
 export default HeadingSection
