@@ -8,8 +8,8 @@ function TabSection() {
     const [tabThree, setTabThree] = useState(false)
   return (
     <section id="tabs">
-        <div className="container relative mx-auto my-6 mb-32 mt-12 px-6">
-            {/* <div className="bg-tabs"></div> */}
+        <div className="container relative mx-auto my-16 mb-32 mt-12 px-6">
+            
             
             <div className="flex flex-col justify-center max-w-xl mx-auto mb-6 md:space-x-10 md:flex-row">            
                 <div
@@ -33,7 +33,7 @@ function TabSection() {
                     <div className={`py-5 ${tabThree && "border-b-4 border-softRed"}`} >Easy Sharing</div>
                 </div>
             </div>
-            <div id="panels" class="container mx-auto">
+            <div id="panels" className="container mx-auto mt-20">
                 {tabOne && <PanelOne />}
                 {tabTwo && <PanelTwo />}
                 {tabThree && <PanelThree />}
