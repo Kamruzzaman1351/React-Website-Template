@@ -3,7 +3,7 @@ import heroImage from "../assets/images/illustration-hero.svg"
 function HeroSection() {
   return (
     
-    <section id="hero" className="pb-10">``      
+    <section id="hero" className="pb-10">      
         <div className="container flex flex-col-reverse mx-auto p-6 lg:flex-row lg:mb-0">        
             <div className="flex flex-col space-y-10 lg:mt-16 lg:w-1/2">
                 <h1
