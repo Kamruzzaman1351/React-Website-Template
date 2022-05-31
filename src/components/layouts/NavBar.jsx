@@ -1,7 +1,14 @@
+import { useState } from 'react'
 import {Link} from 'react-router-dom'
 import logo from "../assets/images/logo-bookmark.svg"
+import MobileMenu from './MobileMenu'
 
-function NavBar() {
+function NavBar() { 
+  const [show, setShow] = useState(false);
+  const showMenu = (e) => {
+    e.preventDefault() ;
+    setShow(!show)
+  }
   return (
     <nav className="container relative mx-auto p-6">
       {/* Flex Container For Nav Items */}
@@ -22,12 +29,23 @@ function NavBar() {
               Login
           </Link>
         </div>
-        {/* @Todo Hamburger Button  */}       
+        {/* Hamburger Button  */} 
+        <button
+          id="menu-btn"
+          className="z-30 block md:hidden focus:outline-none hamburger"
+          onClick={showMenu}
+        >
+          <span className="hamburger-top"></span>
+          <span className="hamburger-middle"></span>
+          <span className="hamburger-bottom"></span>
+        </button>      
         
       </div>
-      {/* @Todo Mobile Menu */}
+      {/* Mobile Menu */}
+      {show && <MobileMenu showMenu={showMenu}/>}
     </nav>
   )
 }
+
 
 export default NavBar
