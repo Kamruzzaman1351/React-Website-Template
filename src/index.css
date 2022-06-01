@@ -805,7 +805,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .bg-dots {
-  /* background-image: url('../images/bg-dots.svg'); */
+  /* background-image: url('http://localhost:3000/components/assets/images/bg-dots.svg'); */
 }
 
 .bg-repeat-x {

@@ -1,6 +1,7 @@
 import HeadingSection from "../components/pageSections/HeadingSection"
 import HeroSection from "../components/pageSections/HeroSection"
 import TabSection from "../components/pageSections/TabSection"
+import BoxContent from "../components/pageSections/BoxContent";
 
 function HomePage() {
   const title = "Features";
@@ -13,6 +14,7 @@ function HomePage() {
       <HeadingSection title={title} text={text}/>
       <TabSection />
       <HeadingSection title={title2} text={text2}/>
+      <BoxContent />
     </>
   )
 }
