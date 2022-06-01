@@ -1,8 +1,12 @@
-import React from 'react'
+import HeroSection from "../components/pageSections/HeroSection"
+import Newsletter from "../components/pageSections/Newsletter"
 
 function Contact() {
   return (
-    <div>Contact</div>
+    <>
+      <HeroSection />
+      <Newsletter />
+    </>
   )
 }
 

@@ -7,7 +7,7 @@ function BoxContent() {
     }
         
   return (
-    <section id="download-boxes" className="py-20">
+    <section id="download-boxes" className="py-32">
         <div className='relative flex flex-col items-center max-w-5xl mx-auto space-y-10 px-10 md:px-6 md:space-y-0 md:space-x-7 md:flex-row'>
             {output}
         </div>
